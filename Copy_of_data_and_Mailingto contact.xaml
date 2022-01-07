@@ -1,0 +1,209 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Copy_of_data_and_Mailingto_contact" this:Copy_of_data_and_Mailingto_contact.Email="testpreetham123@gmail.com" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Password" Type="InArgument(x:String)" />
+    <x:Property Name="Email" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Copy_of_data_and_Mailingto_contact.Password>
+    <InArgument x:TypeArguments="x:String">
+      <Literal x:TypeArguments="x:String">Qwerty@123</Literal>
+    </InArgument>
+  </this:Copy_of_data_and_Mailingto_contact.Password>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>654,2737</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Copy_of_data_and_Mailingto_contact_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Copy_of_data_and_Mailingto_contact" sap:VirtualizedContainerService.HintSize="552,2672" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Number" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="val" />
+      <Variable x:TypeArguments="x:String" Name="Name" />
+      <Variable x:TypeArguments="x:String" Name="Phone" />
+      <Variable x:TypeArguments="x:String" Name="Birthday" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="email" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="510,238" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the email id to send the report" Title="Mailing System">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="510,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the number of names required for extraction" Title="Enter Details">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Number]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:BuildDataTable DataTable="[ExtractDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Birthday&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="510,1925" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a061a04b-a7ec-41bb-a765-0902571b1950" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1709" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InterruptibleDoWhile Condition="[val&lt;CInt(Number)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="434,1232" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1027" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[val]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[val+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NGetText DisplayName="Get Text 'Ray E. Evans'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a061a04b-a7ec-41bb-a765-0902571b1950" Version="V1">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="511, 489, 540, 19" FriendlyName="'Ray E. Evans'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' /&gt;" Guid="a44ecbcf-d84a-4e4a-ab6c-d8d73035f69e" ImageBase64="" InformativeScreenshot="68a774c4dbe65fc3b29b27842f468111.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="Selector" />
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
+                    </uix:NGetText.Text>
+                  </uix:NGetText>
+                  <uix:NGetText DisplayName="Get Text '312-937-8224'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="a061a04b-a7ec-41bb-a765-0902571b1950" Version="V1">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="696, 732, 355, 20" FriendlyName="'312-937-8224'" FullSelectorArgument="&lt;webctrl idx='2' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' /&gt;" Guid="88539789-70be-4341-b604-d17edfd0a440" ImageBase64="" InformativeScreenshot="6c4df3a8fda2a861a28b0dc3b6720898.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="Selector" />
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[Phone]</OutArgument>
+                    </uix:NGetText.Text>
+                  </uix:NGetText>
+                  <uix:NGetText DisplayName="Get Text 'October 2, 1942'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="a061a04b-a7ec-41bb-a765-0902571b1950" Version="V1">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="696, 362, 355, 20" FriendlyName="'October 2, 1942'" FullSelectorArgument="&lt;webctrl idx='4' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' /&gt;" Guid="c216ccd9-1740-4874-8221-46a60e83dbc3" ImageBase64="" InformativeScreenshot="1342b2c043ac4628cd48fc8c45fb5500.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="Selector" />
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[Birthday]</OutArgument>
+                    </uix:NGetText.Text>
+                  </uix:NGetText>
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Name,Phone,Birthday}]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:AddDataRow>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a061a04b-a7ec-41bb-a765-0902571b1950" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="415, 422, 71, 23" ElementType="Button" FriendlyName="'Generate'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Generate' check:text='Generate' /&gt;" Guid="35bf4d0c-eb49-44c9-bb41-471d21a03ec6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAbCAYAAAA0wHIdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUHSURBVGhD7Zhva2NFFMb3dZrgtqmw+kb9LoKgLC6Ism/0azTgtv0OgiD4LumCr2Tdquj6h6a+UtxVy8YmTdamttuk+derSdM2TXp8nrkzk0mcrRdWWNi7B06TO3POzJzfPDOX5pI8s8jmhXV+fi6j0Uj5cDiMjZuaWb/PJmAZSEc3P5HDq29J+8VXpJ16Pj6Oelk36/dBs7DYMTw9leD6e/6BYubkQB4uMAVLgYIMD6+/602Mq5MHuRhgChYl183e9CbE3cmFfBQsUhsMBtJ+45o3OPYOLuRDTpdIrd/vS/uFmF3mUR1cyIecFKxut+sPfObKyUfB4gUWBIE3yPVWallOA3V0J+w8v+yNf9LezKxLeNMEMsj4Y6I6+ZBTJFjjiUUGazdkNXFZeWGN9AI5fczF/N/eglew5oFacSD9TFq1+WKjeGRYTSjqyCiqmJUfZ+ZkNzmvnN8314p2MS7U0EpygnZXlSPMNbbxrjO/X9LN2oxqGznTUZK+/s6+6XjaMIf41Iqc6OexhXO10HemW0L7b+VFgsUC9gDADH6UnZWHqXnbX8P3jZm0/AFwdVNQkJcCVHd7Ia/zStJLLUnHAf45+u8rVcJKORS3LCf6sZsNVbtTDJ9H+SUpZP9NZZhflHopkNZCGM/5jJKOM/Nyx3luIuZOYlbKdjOLsoOc1URWuur5YmCRYW05cu4upOXAszM8hh1dzxmO6QPAKyRz8rdqCeQosyhtDYP92+jfzusGwO3YDSlKG2qtor/iwPzVwipKNfGc3EKhPyGOyi4l00rlheSiNHTKaTYtBWfdPSh/FxvbMHNiw8rI20JO08l51FGNBKsJL9lJwwF3sLDvsUvuThLGoZ7UZyfZRWnpfipiHwvfcWDte5RjDf17Dqy/UCTz61hbzSpl0k6wzqID6wiwGN+4YBquq6HrnvboynJ2jLt8gDYu9r6zmK6jnMHa++GxgH8KFXyGz3sY4yJYuw6M8HhcVuph/rfYmJ+d/i42i+tqYP6haguP2e3EDTnQQxLW5hSsGnJqdpismoPOOTjXPaj0sWHtobBvrIrCO2RScYQ1J1/bgnBHoSACeYi76hhjH2eWLEwfrD3ANIWO0M97kTFKUaUV2ZiCxfm3nLZDqO1BckXfPxrWxDUQwlqfutfCNc5LD0Od5cJN8HGIBIvOhRWxmFXsnFWYa9gl9v8Gv+VAHRvvjLHyfLBayKWCtvWlPmFQ8y9TsKiAAnIm43FJ6yEJiy+d3829pyyExks9hDhpvGJYq49BZFh0DsJLlwXxWJljRvn+MDOr3oo8npso4AvdzzceP7+EF5Jz8p3OvQu5M56ffOb9R/XS1zEWxzVHhM7xNzAu27+C/4l1UAEcg/FcA+PMvIwjSCqJLwH2s029DZFbgXOc6XmYExlW68rL3kDjXCAvSarCdUIy8uVkLMLt5zOVoC5kfDfx/OQz2/ls2txcOttMLN3M5Ys3MebucfvZzvUxj9+n8x51X5GLhWX+Nzx47ao3OO5OLvZ/Q/7hf9X1jz72BsfdycX+6mB+z+p0OlK/9o43Ia5OHuRif8/im8Cqa39fam++7U2Mm5MDeRhV0SZ+g+/1elKv12X3gw+l9urr0rzyknegp9VZL+tm/eRAHuRCPhYWzQAjSUpvH1Sr1apUKhUpl8tPvbNO1su6WT85uKBoFhaNHZQczyiD+RbgazMuznpZN+snBxeUiMg/DaI/C/8upS4AAAAASUVORK5CYII=" InformativeScreenshot="6d02f9f0e265e815e184c6349f706e01.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="Selector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+            </ui:InterruptibleDoWhile>
+            <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="ExtractedData.csv" sap:VirtualizedContainerService.HintSize="434,152" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="Please find the attached report for details" DisplayName="Private: Send SMTP Mail Message" Email="[Email]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,151" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Name="Preetham" Password="[Password]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="ExtractedDataReport" To="[email]">
+              <ui:SendMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                  <InArgument x:TypeArguments="x:String">C:\Users\chandan\Documents\UiPath\Flowchart Demo\ExtractedData.csv</InArgument>
+                </scg:List>
+              </ui:SendMail.Files>
+            </ui:SendMail>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 784" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="57e5e0e9c7d206e86987c85825251223.png" Selector="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator'/&gt;" Url="https://www.fakenamegenerator.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
